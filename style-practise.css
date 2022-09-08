@@ -1,0 +1,43 @@
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+* {
+    box-sizing: border-box;
+}
+
+section {
+    width: 50%;
+    min-width: 300px;
+    max-width: 600px;
+    background-color: #f2f2f2;
+    padding: 20px;
+
+}
+input[type=text],
+input[type=password],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    /* display的各个作用不清楚 */
+    border: #ccc;
+}
+input[type=submit] {
+    width: 100%;
+    background-color: #4caf50;
+    color: #ccc;
+    border: none;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border-radius: 5px;
+    cursor: pointer;
+
+
+}
