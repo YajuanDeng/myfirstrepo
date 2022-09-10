@@ -1,0 +1,28 @@
+body {
+
+    width: 100wh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1E3143;
+    color: #08979c;
+}
+
+section {
+    width: 20%;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+input[type=password],
+input[type=text] {
+    width: 100%;
+
+}
+
+input[type=submit] {
+    width: 30%;
+
+}
