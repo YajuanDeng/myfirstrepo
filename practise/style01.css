@@ -1,0 +1,22 @@
+/* table, 
+th,
+td
+ { 
+    border: 1px solid grey;
+    border-collapse:  collapse;
+
+} */
+/* table 仅仅是外边框 */
+/* 去掉table border-collapse不起作用 ？ */
+/* table,
+thead {
+    border: 1px solid grey;
+} */
+/* i为什么上述写法达不到相同效果？ */
+.mytable_class {
+    background-color: aquamarine;
+}
+/* table {
+    background-color: blue;
+} */
+/* table标签实现相同的作用 */
