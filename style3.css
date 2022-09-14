@@ -36,7 +36,7 @@ h3 {
 */
 button {
     border: none;
-    background-color: #efefef;
+    background-color: none;
     padding: 0;
     font-weight: bold;
     cursor: pointer;
@@ -50,8 +50,10 @@ button {
     
     max-width: 400px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
 
+    
 }
 /* Step 6: Select div elements with class of alert and give it:
   - Padding of 8px
@@ -88,7 +90,8 @@ button {
   - Border radius of 50px
 */
 .alert__container::before {
-    content:'' ;
+    content:" AAAAA " ;
+    width: 100%;
     min-width: 6px;
     background-color: #0090d7;
     border-radius: 50px;
@@ -98,6 +101,12 @@ button {
   - Background color of #d20d38 if inside div element with danger class
   - Background color of #e8ac00 if inside div element with warning class
 */
+div[class="danger"] .alert__container::before {
+
+  background-color: #d20d38;
+
+}
+
 
 /* Step 11: Select elements with class of alert__details: 
   - Give it top and bottom padding of 12px
@@ -105,22 +114,58 @@ button {
   - Give the first p element font size of 16px and font weight of bold
 */
 
+.alert__details {
+
+  padding: 12px 0;
+
+}
+.alert__details p {
+
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.alert__details+p {
+
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
 /* Step 12: Select all disabled button and give it:
   - Color of grey
   - Not-allowed cursor
 */
+button:disabled {
+  color: grey;
+  cursor: not-allowed;
 
+}
 
 /* Step 13: Select all buttons and give it:
   - Color of #0090d7 if its class contains 'info'
   - Color of #d20d38 if its class contains 'danger'
   - Color of #e8ac00 if its class contains 'warning'
 */
+div[class*="info"] button {
+  color: #0090d7;
+}
+div[class*="danger"] button {
+  color: #d20d38;
+}
+div[class*="warning"] button {
+  color: #e8ac00;
+}
+
 
 /* Step 14: Select all p element that is direct children of the container and give it:
   - Margin top of 40px
   - Font style of italic
 */
+
+#container > p {
+  margin-top: 48px;
+  font-style: italic;
+}
 
 /* Step 15: Select all sibling alert elements of h3 elements that have class of dark-mode and give it:
  - Text color: white
