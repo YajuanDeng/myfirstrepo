@@ -90,7 +90,7 @@ button {
   - Border radius of 50px
 */
 .alert__container::before {
-    content:" AAAAA " ;
+    content:" " ;
     width: 100%;
     min-width: 6px;
     background-color: #0090d7;
@@ -101,7 +101,7 @@ button {
   - Background color of #d20d38 if inside div element with danger class
   - Background color of #e8ac00 if inside div element with warning class
 */
-div[class="danger"] .alert__container::before {
+.danger .alert__container::before {
 
   background-color: #d20d38;
 
@@ -162,7 +162,7 @@ div[class*="warning"] button {
   - Font style of italic
 */
 
-#container > p {
+#container  p {
   margin-top: 48px;
   font-style: italic;
 }
